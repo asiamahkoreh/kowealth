@@ -1,0 +1,378 @@
+:root {
+     --primary: skyblue;
+     --dark: #333;
+     --light: #fff;
+     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+html {
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     color: var(--dark);
+}
+
+body {
+     background: white;
+     /* margin: 30px 50px; */
+     margin: 0;
+     padding: 0;
+     line-height: 1.4;
+}
+
+.btn {
+     background: var(--dark);
+     color: var(--light);
+     padding: 0.6rem 1.3rem;
+     text-decoration: none;
+     border: 0;
+     border-radius: 1rem;
+}
+
+img {
+     max-width: 100%;
+}
+
+.wrapper {
+     display: grid;
+     grid-gap: 20px;
+}
+
+.kowealth-logo {
+     height: 100px;
+}
+
+.the-headpage {
+     position: fixed;
+     display: grid;
+     grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+     background: var(--light);
+     width: 100%;
+}
+
+.head-page {
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     /* background: var(--primary); */
+     text-align: center;
+}
+
+.page-title {
+     font-size: 2rem;
+     margin: 0;
+}
+
+.page-slogan {
+     margin: 0;
+     color: rgb(13, 45, 201);
+}
+
+.first-image {
+     margin-top: 10rem;
+}
+
+/* navigation */
+nav ul {
+     display: grid;
+     grid-gap: 20px;
+     padding: 0;
+     list-style: none;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+nav ul li ul {
+     display: none;
+     position: absolute;
+     width: inherit;
+     /* margin: 0.6rem; */
+}
+
+nav ul li:hover ul {
+     display: block;
+}
+
+nav ul li ul li {
+     border-bottom: solid 1px black;
+}
+
+nav ul li ul li:last-child {
+     border-bottom: none;
+}
+
+nav a {
+     background: var(--primary);
+     display: block;
+     text-decoration: none;
+     padding: 0.8rem;
+     text-align: center;
+     color: var(--dark);
+     text-transform: uppercase;
+     font-size: 1.1rem;
+     box-shadow: var(--shadow);
+
+}
+
+nav a:hover {
+     background-color: var(--dark);
+     color: var(--light);
+}
+
+.contact-us1 {
+     background: url(../images/8bedspintex\ 1.jpeg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 5rem;
+     color: var(--light);
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.contact-us1 h1 {
+     font-size: 4rem;
+}
+
+.short-stay-title {
+     text-align: center;
+     text-transform: capitalize;
+}
+
+.short-stay-container {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+     gap: 20px;
+     text-transform: capitalize;
+     text-align: center;
+}
+
+.short-stay-room {
+     background: linear-gradient(lightgray, lightblue);
+}
+
+/* .image1 {
+     display: grid;
+     grid-template-columns: 1fr;
+     gap: 20px;
+     width: 600px;
+     height: 400px;
+}
+
+.image2 {
+     display: grid;
+     grid-template-columns: repeat(1fr, 1fr);
+     max-width: 300px;
+     max-height: 250px;
+} */
+
+
+.short-stay-container div {
+     box-shadow: var(--shadow);
+}
+
+.short-stay-container div button {
+     margin-top: 0.3rem;
+     margin-bottom: 0;
+     margin-left: 0.3rem;
+     margin-right: 0.3rem;
+     padding: 0.3rem 0.8rem;
+     font-size: 1rem;
+     font-weight: bold;
+
+}
+
+.short-stay-container div p {
+     margin-top: 0;
+}
+
+.gallery-link {
+     background: wheat;
+     color: black;
+     padding: 0.6rem;
+     font-weight: bold;
+}
+
+.gallery-link:hover {
+     background: black;
+     color: wheat;
+}
+
+
+
+.rental-form {
+     text-align: center;
+     padding: 1rem;
+}
+
+#error {
+     color: blue;
+     font-family: cursive, sans-serif;
+}
+
+.enquiry-text {
+     text-decoration: underline white 2px;
+     text-align: center;
+
+}
+
+.fa {
+     color: blue;
+}
+
+.write {
+     max-width: 350px;
+     padding: 1rem;
+     border-radius: 0.5rem;
+     border: solid 1px lightgray;
+}
+
+.submit {
+     width: 120px;
+     padding: 0.5rem;
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.enquiry-details {
+     font-size: 1.5rem;
+}
+
+.therental-form {
+     margin: auto;
+     text-align: center;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+.whatsapp-logo {
+     position: fixed;
+     right: 40px;
+     top: 80%;
+     max-width: 130px;
+}
+
+.fa-whatsapp {
+     color: white;
+     background: green;
+     border-radius: 1.5rem;
+     padding: 0.4rem;
+}
+
+.fa-facebook {
+     color: white;
+     background: rgb(14, 126, 201);
+     border-radius: 1.5rem;
+     padding: 0.4rem;
+}
+
+footer div p {
+     color: black;
+}
+
+/* footer */
+footer {
+     margin-top: 2rem;
+     background: linear-gradient(rgb(135, 206, 235), lightgray);
+     color: var(--light);
+     padding: 1rem;
+
+}
+
+.foot {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+/* .developer{
+     text-align: end;
+} */
+
+/* media Queries */
+
+@media (max-width: 1000px) {
+     .the-headpage {
+          position: static;
+     }
+
+     .head-page {
+          grid-template-columns: 1fr;
+     }
+
+     nav ul {
+          grid-template-columns: 1fr;
+     }
+
+     .page-title {
+          display: none;
+     }
+
+     .first-image {
+          margin-top: 0;
+     }
+}
+
+@media (max-width: 550px) {
+
+     .contact-us1 h1 {
+          font-size: 2rem;
+     }
+
+     .the-headpage {
+          position: static;
+     }
+
+     .head-page {
+          grid-template-columns: 1fr;
+
+     }
+
+     .page-title {
+          font-size: 2rem;
+          display: none;
+     }
+
+     .page-slogan {
+          font-size: 1rem;
+     }
+
+
+     .main-nav ul {
+          grid-template-columns: 1fr;
+     }
+
+     input {
+          display: grid;
+          grid-template-columns: 1fr;
+          /* width: 150px; */
+          margin: 0;
+     }
+
+     .rental-form {
+          grid-template-columns: 1fr;
+          margin: 0;
+     }
+
+     .therental-form {
+          grid-template-columns: 1fr;
+          margin: 0;
+     }
+}
+
+
+@media (max-width: 550px) {
+
+     input {
+          display: grid;
+          grid-template-columns: 1fr;
+          /* width: 150px; */
+          margin: 0;
+     }
+
+
+
+     .foot {
+          grid-template-columns: 1fr;
+     }
+}

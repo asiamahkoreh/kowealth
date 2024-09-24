@@ -1,0 +1,351 @@
+:root {
+     --primary: skyblue;
+     --dark: #333;
+     --light: #fff;
+     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+html {
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     color: var(--dark);
+}
+
+body {
+     background: white;
+     /* margin: 30px 50px; */
+     margin: 0;
+     padding: 0;
+     line-height: 1.4;
+}
+
+.btn {
+     background: var(--dark);
+     color: var(--light);
+     padding: 0.6rem 1.3rem;
+     text-decoration: none;
+     border: 0;
+     border-radius: 1rem;
+}
+
+img {
+     max-width: 100%;
+}
+
+.wrapper {
+     display: grid;
+     grid-gap: 20px;
+}
+
+.kowealth-logo {
+     height: 100px;
+}
+
+.the-headpage {
+     position: fixed;
+     display: grid;
+     grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+     background: var(--light);
+     width: 100%;
+}
+
+.head-page {
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     /* background: var(--primary); */
+     text-align: center;
+}
+
+.page-title {
+     font-size: 2rem;
+     margin: 0;
+}
+
+.page-slogan {
+     margin: 0;
+     color: rgb(13, 45, 201);
+}
+
+.showcase h1 {
+     font-size: 4rem;
+     margin-bottom: 0;
+     color: var(--dark);
+}
+
+.showcase p {
+     font-size: 1.3rem;
+     margin-top: 0;
+     color: var(--dark);
+}
+
+/* navigation */
+nav ul {
+     display: grid;
+     grid-gap: 20px;
+     padding: 0;
+     list-style: none;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+nav ul li ul {
+     display: none;
+     position: absolute;
+     width: inherit;
+     /* margin: 0.6rem; */
+}
+
+nav ul li:hover ul {
+     display: block;
+}
+
+nav ul li ul li {
+     border-bottom: solid 1px black;
+}
+
+nav ul li ul li:last-child {
+     border-bottom: none;
+}
+
+nav a {
+     background: var(--primary);
+     display: block;
+     text-decoration: none;
+     padding: 0.8rem;
+     text-align: center;
+     color: var(--dark);
+     text-transform: uppercase;
+     font-size: 1.1rem;
+     box-shadow: var(--shadow);
+
+}
+
+nav a:hover {
+     background-color: var(--dark);
+     color: var(--light);
+}
+
+.contact-us1 {
+     background: url(../images/pexels-godless-humanist-1587947.jpg);
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     padding: 5rem;
+     color: var(--light);
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.contact-us1 h1 {
+     font-size: 4rem;
+}
+
+.first-image {
+     margin-top: 10rem;
+}
+
+.enquiry-section {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+     gap: 20px;
+}
+
+.enquiry-text {
+     text-decoration: underline skyblue 2px;
+}
+
+.fa {
+     color: blue;
+}
+
+.contact-enquiry {
+     margin: 0 3rem;
+}
+
+#error {
+     color: blue;
+     font-family: cursive, sans-serif;
+}
+
+.write {
+     max-width: 350px;
+     padding: 1rem;
+     border-radius: 0.5rem;
+     border: solid 1px lightgray;
+}
+
+.the-enquiryshadow {
+     /* background: whitesmoke; */
+     box-shadow: var(--shadow);
+     border-radius: 0.4rem;
+     padding: 3rem;
+}
+
+.submit {
+     width: 120px;
+     padding: 0.5rem;
+     font-size: 1.5rem;
+     font-weight: bold;
+}
+
+.enquiry-details {
+     font-size: 1.5rem;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+.whatsapp-logo {
+     position: fixed;
+     right: 40px;
+     top: 80%;
+     max-width: 130px;
+}
+
+.fa-whatsapp {
+     color: white;
+     background: green;
+     border-radius: 1.5rem;
+     padding: 0.4rem;
+}
+
+.fa-facebook {
+     color: white;
+     background: rgb(14, 126, 201);
+     border-radius: 1.5rem;
+     padding: 0.4rem;
+}
+
+footer div p {
+     color: black;
+}
+
+/* footer */
+footer {
+     margin-top: 2rem;
+     background: linear-gradient(rgb(135, 206, 235), lightgray);     
+     color: var(--light);
+     padding: 1rem;
+
+}
+
+.foot {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+/* .developer{
+     text-align: end;
+} */
+
+/* media Queries */
+
+/* @media (max-width: 700px) {
+
+
+.enquiry-section {
+     grid-template-columns: 1fr;
+}
+
+
+} */
+
+@media (max-width: 1000px) {
+     .the-headpage {
+          position: static;
+     }
+
+     .head-page {
+          grid-template-columns: 1fr;
+     }
+
+     nav ul {
+          grid-template-columns: 1fr;
+     }
+
+     .page-title {
+          display: none;
+     }
+
+     .first-image {
+          margin-top: 0;
+     }
+
+     .contact-enquiry {
+          margin: 0;
+     }
+}
+
+@media (max-width: 550px) {
+
+     .first-image {
+          margin-top: 0;
+     }
+
+     .the-headpage {
+          position: static;
+     }
+
+     .head-page {
+          grid-template-columns: 1fr;
+     }
+
+     .page-title {
+          font-size: 2rem;
+          display: none;
+     }
+
+     .page-slogan {
+          font-size: 1rem;
+     }
+
+
+     .main-nav ul {
+          grid-template-columns: 1fr;
+     }
+
+
+     .contact-enquiry {
+          margin: 0;
+          padding: 0;
+     }
+
+     .enquiry-section {
+          grid-template-columns: 1fr;
+          margin: 0;
+          padding: 0;
+     }
+
+     .the-enquiryshadow {
+          padding: 0;
+     }
+
+     .enquiry-details {
+          font-size: 1rem;
+     }
+
+     .contact-us1 h1 {
+          font-size: 2.3rem;
+     }
+
+}
+
+
+@media (max-width: 550px) {
+     .top-container {
+          grid-template-areas:
+               'showcase'
+               'top-box-a'
+               'top-box-b';
+     }
+
+     .contact-enquiry {
+          margin: 0;
+     }
+
+     .foot {
+          grid-template-columns: 1fr;
+     }
+}

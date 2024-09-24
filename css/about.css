@@ -1,0 +1,354 @@
+:root {
+     --primary: skyblue;
+     --dark: #333;
+     --light: #fff;
+     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8)
+}
+
+html {
+     box-sizing: border-box;
+     font-family: Arial, Helvetica, sans-serif;
+     color: var(--dark);
+}
+
+body {
+     background: white;
+     /* margin: 30px 50px; */
+     margin: 0;
+     padding: 0;
+     line-height: 1.4;
+}
+
+.btn {
+     background: var(--dark);
+     color: var(--light);
+     padding: 0.6rem 1.3rem;
+     text-decoration: none;
+     border: 0;
+     border-radius: 0.8rem;
+     border-radius: 1rem;
+}
+
+.btn:hover {
+     background-color: lightcoral;
+     color: black;
+     padding: 0.8rem 1.1rem;
+}
+
+img {
+     max-width: 100%;
+}
+
+.wrapper {
+     display: grid;
+     grid-gap: 20px;
+}
+
+.kowealth-logo {
+     height: 100px;
+}
+
+.the-headpage {
+     position: fixed;
+     display: grid;
+     grid-template-columns: repeat(autofit, minmax(200px, 1fr));
+     background: var(--light);
+     width: 100%;
+}
+
+.head-page {
+     display: grid;
+     grid-gap: 20px;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     /* background: var(--primary); */
+     text-align: center;
+}
+
+/* .head-pag {
+     text-align: center;
+} */
+
+.page-title {
+     font-size: 2rem;
+     margin: 0;
+}
+
+.page-slogan {
+     margin: 0;
+     color: rgb(13, 45, 201);
+}
+
+.first-image img {
+     max-height: 500px;
+     width: 100%;
+}
+
+
+.about-subhead {
+     color: goldenrod;
+     text-align: center;
+     font-weight: bold;
+     
+}
+
+
+.about-kowealth {
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     gap: 20px;
+     /* background: lightblue; */
+     /* box-shadow: var(--shadow); */
+     font-size: 1.2rem;
+}
+
+.about-intro {
+     
+     text-align: center;
+}
+
+.about-text {
+     /* text-align: center; */
+     padding-top: 2rem ;
+     padding-left: 1rem;
+}
+
+.vision-head {
+     text-align: center;
+}
+
+/* .vision-text {
+     padding-top: 5rem;
+     padding-right: 1rem;
+} */
+
+.background-text {
+     padding: 1rem;
+}
+
+
+nav ul {
+     display: grid;
+     grid-gap: 20px;
+     padding: 0;
+     list-style: none;
+     grid-template-columns: repeat(4, 1fr);
+}
+
+nav ul li ul {
+     display: none;
+     position: absolute;
+     width: inherit;
+     /* margin: 0.6rem; */
+}
+
+nav ul li:hover ul {
+     display: block;
+}
+
+nav ul li ul li {
+     border-bottom: solid 1px black;
+}
+
+nav ul li ul li:last-child {
+     border-bottom: none;
+}
+
+nav a {
+     background: var(--primary);
+     display: block;
+     text-decoration: none;
+     padding: 0.8rem;
+     text-align: center;
+     color: var(--dark);
+     text-transform: uppercase;
+     font-size: 1.1rem;
+     box-shadow: var(--shadow);
+
+}
+
+nav a:hover {
+     background-color: var(--dark);
+     color: var(--light);
+}
+
+.our-services-page {
+     text-align: center;
+     font-size: 1.5rem;
+     margin: 2rem;
+     
+}
+
+.our-services-page a {
+     text-decoration: none;
+     background: black;
+     color: white;
+     padding: 1rem;
+     border-radius: 1rem;
+}
+
+.our-services-page a:hover {
+     background: lightcoral;
+     color: black;
+}
+
+a {
+     text-decoration: none;
+     color: black;
+}
+
+.whatsapp-logo {
+     position: fixed;
+     right: 40px;
+     top: 80%;
+     max-width: 130px;
+}
+
+.fa-whatsapp {
+     color: white;
+     background: green;
+     border-radius: 1.5rem;
+     padding: 0.4rem;
+}
+
+.fa-facebook {
+     color: white;
+     background: rgb(14, 126, 201);
+     border-radius: 1.5rem;
+     padding: 0.4rem;
+}
+
+footer div p {
+     color: black;
+}
+
+
+/* footer */
+footer {
+     margin-top: 2rem;
+     background: linear-gradient(rgb(135, 206, 235), lightgray);
+     color: var(--light);
+     padding: 1rem;
+
+}
+
+.foot {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+/* .developer{
+     text-align: end;
+} */
+
+/* media Queries */
+
+@media (max-width: 1000px) {
+
+     .the-headpage {
+               position: static;
+          }
+     
+          .head-page {
+               grid-template-columns: 1fr;
+          }
+     
+          nav ul {
+               grid-template-columns: 1fr;
+          }
+     
+          .page-title {
+               display: none;
+          }
+
+
+     .about-kowealth {
+          grid-template-columns: 1fr;
+          font-size: 1rem;
+          
+     }
+
+
+}
+
+@media (max-width: 550px) {
+
+
+     .the-about-title {
+          margin-top: 0;
+     }
+
+     .the-headpage {
+          position: static;
+     }
+
+     .head-page {
+          grid-template-columns: 1fr;
+     }
+
+     .page-title {
+          font-size: 2rem;
+          display: none;
+     }
+
+     .page-slogan {
+          font-size: 1rem;
+     }
+
+     .about-text {
+          /* text-align: center; */
+          padding-top: 0;
+          padding-left: 0;
+     }
+
+     /* .about-intro {
+          text-align: justify;
+     } */
+
+     .top-container {
+          grid-template-areas:
+               'showcase showcase'
+               'top-box-a top-box-b';
+     }
+
+     .showcase h1 {
+          font-size: 2.5rem;
+     }
+
+     .main-nav ul {
+          grid-template-columns: 1fr;
+     }
+
+     .info {
+          grid-template-columns: 1fr;
+     }
+
+     .info .btn {
+          display: block;
+          text-align: center;
+          margin: auto;
+     }
+
+     .our-services-page a {
+          font-size: 1rem;
+          padding: 0.4rem;
+     }
+}
+
+
+@media (max-width: 550px) {
+     .top-container {
+          grid-template-areas:
+               'showcase'
+               'top-box-a'
+               'top-box-b';
+     }
+
+     /* .our-services-page a {
+          font-size: 1.5rem;
+          padding: 0;
+     } */
+
+     .foot {
+          grid-template-columns: 1fr;
+     }
+}
